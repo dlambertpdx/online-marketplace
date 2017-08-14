@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Online Marketplace</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Make a Purchase:</h1>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="product1">Select a product to purchase:</label>
+            <select class="form-control" id="product1">
+              <option>Paper Clips</option>
+              <option>Stapler</option>
+              <option>Pencils</option>
+              <option>Notebook</option>
+              <option>Floppy Disk</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="name1">Enter ship-to name:</label>
+            <input type="text" class ="form-control" id="name1" placeholder="Who should we address it to?">
+          </div>
+
+          <div class="form-group">
+            <label for="address1">Shipping address:</label>
+            <input type="text" class ="form-control" id="address1" placeholder="Where are we sending it? (Ex. 123 S. Main St.)">
+          </div>
+
+          <div class="form-group">
+            <label for="city1">Please enter a city:</label>
+            <input type="text" class ="form-control" id="city1" placeholder="Enter shipping city">
+          </div>
+
+          <div class="radio">
+            <label>
+              <input type="radio" name="state" value="Oregon" checked>
+              Oregon
+            </label>
+            <label>
+              <input type="radio" name="state" value="Washington">
+              Washington
+            </label>
+            <label>
+              <input type="radio" name="state" value="Idaho">
+              Idaho
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-info">Purchase!</button>
+
+        </form>
+    </div>
+
+      <div id="receipt">
+        <h1>Thank you for your purchase!</h1>
+        <p><span class="name"></span> your <span class="product"></span> will ship to <span class="address"></span>, <span class="city"></span>, <span class="state"></span></p>
+      </div>
+  </div>
+
+  </body>
+</html>
